@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EKO-Školník</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+    }
+    #defaultCanvas0 {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+    .logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin: 0 auto 20px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Modální okno -->
+  <div class="modal fade" id="commandModal" tabindex="-1" aria-labelledby="commandModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Zadejte příkaz pro vystřelení</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Zavřít"></button>
+        </div>
+        <div class="modal-body">
+          <p>Použijte formát: <code>shoot(úhel, síla)</code></p>
+          <input type="text" class="form-control" id="commandInput" placeholder="shoot(45, 50)">
+          <div id="errorMessage" class="text-danger mt-2"></div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Zavřít</button>
+          <button type="button" class="btn btn-primary" id="submitCommand">Odeslat</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<!-- Úvodní modální okno -->
+<div class="modal fade" id="startModal" tabindex="-1" aria-labelledby="startModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="startModalLabel">EKO-Školník Adventure</h5>
+      </div>
+      <div class="modal-body">
+        <img src="logo.png" alt="Logo hry" class="logo">
+        <h4>Ovládání a pravidla:</h4> 
+        <ul>
+          <li>Potáhni myší symbolickou pružinu pro vystřelení modré kuličky, která zastupuje šetřivého školníka.</li> 
+          <li>Školník se pohybuje v půdorysu školy a snaží se dotykem na červené vypínače zhasnout všechna světla.</li>
+          <li>Hra skončí, až se mu to úplně povede. Mezitím se prosvítí dost energie a ještě více energie to bude stát školníka.</li>          
+        </ul>  
+        <h4 class="text-danger">Vyhrává ten, kdo ušetří nejvíce!</h4>
+        <hr>
+        <label for="playerName">Přezdívka:</label>
+        <input type="text" class="form-control" id="playerName" placeholder="Vložte přezdívku">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" id="startButton">Start</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Závěrečné modální okno -->
+<div class="modal fade" id="endModal" tabindex="-1" aria-labelledby="endModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header bg-primary">
+        <h5 class="modal-title text-white" id="endModalLabel">EKO-Školník Adventure</h5>
+      </div>
+      <div class="modal-body">
+        <img src="logo.png" alt="Logo hry" class="logo">
+        <h4 class="text-primary">Výsledky</h4>
+        <div id="resultText"></div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" id="saveButton">Uložit výsledky</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Skripty -->
+  <script src="assets/jquery.min.js"></script>
+  <script src="assets/p5.js"></script>
+  <script src="assets/matter.min.js"></script>
+  <script src="assets/bootstrap.bundle.min.js"></script>
+  <script src="projectile.js"></script>
+  <script src="leaderboard.js"></script>
+  <script src="wall.js"></script>
+  <script src="switch.js"></script>
+  <script src="light.js"></script>  
+  <script src="main.js"></script>
+</body>
+</html>
