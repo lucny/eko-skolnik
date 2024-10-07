@@ -58,7 +58,7 @@
             "y": 360,
             "width": 5,
             "height": 20,
-            "status": "off",
+            "status": "on",
             "lights": [
                 {
                     "x": 1690,
@@ -97,7 +97,7 @@
             "y": 535,
             "width": 5,
             "height": 20,
-            "status": "off",
+            "status": "on",
             "lights": [
                 {
                     "x": 1720,
@@ -111,7 +111,7 @@
             "y": 335,
             "width": 20,
             "height": 5,
-            "status": "off",
+            "status": "on",
             "lights": [
                 {
                     "x": 700,
@@ -169,7 +169,7 @@
             "y": 335,
             "width": 20,
             "height": 5,
-            "status": "off",
+            "status": "on",
             "lights": [
                 {
                     "x": 450,
@@ -241,7 +241,7 @@
             "y": 560,
             "width": 20,
             "height": 5,
-            "status": "off",
+            "status": "on",
             "lights": [
                 {
                     "x": 1780,
@@ -279,7 +279,7 @@
             "y": 560,
             "width": 20,
             "height": 5,
-            "status": "off",
+            "status": "on",
             "lights": [
                 {
                     "x": 1570,
@@ -298,7 +298,7 @@
             "y": 495,
             "width": 20,
             "height": 5,
-            "status": "off",
+            "status": "on",
             "lights": [
                 {
                     "x": 1320,
