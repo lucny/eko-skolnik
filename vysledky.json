@@ -1,44 +1,4 @@
 {
   "results": [
-    {
-      "playerName": "Josef",
-      "energy": "696.57",
-      "time": "17.88"
-    },
-    {
-      "playerName": "Lojza",
-      "energy": "760.23",
-      "time": "21.09"
-    },
-    {
-      "playerName": "Milan",
-      "energy": "801.80",
-      "time": "18.99"
-    },
-    {
-      "playerName": "Petr",
-      "energy": "966.71",
-      "time": "23.20"
-    },
-    {
-      "playerName": "Jan",
-      "energy": "1027.69",
-      "time": "17.66"
-    },
-    {
-      "playerName": "Šimon",
-      "energy": "1394.94",
-      "time": "32.71"
-    },
-    {
-      "playerName": "Karel",
-      "energy": "1482.64",
-      "time": "50.14"
-    },
-    {
-      "playerName": "Pavel",
-      "energy": "1842.28",
-      "time": "41.69"
-    }
   ]
 }
