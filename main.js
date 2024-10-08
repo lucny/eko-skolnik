@@ -277,7 +277,7 @@ function draw() {
     totalEnergyConsumption =
       lightsEnergyConsumption + projectile.getEnergyConsumption();
     text(`Celková energie: ${totalEnergyConsumption.toFixed(2)} W`, 1420, 50);
-    text(`Čas trvání hry: ${((endTime - startTime)/1000).toFixed(2)}`, 1420, 90);
+    text(`Čas trvání hry: ${((currentTime - startTime)/1000).toFixed(2)}`, 1420, 90);
 
     // Kontrola kolizí mezi projektily a vypínači
     checkCollisions();
